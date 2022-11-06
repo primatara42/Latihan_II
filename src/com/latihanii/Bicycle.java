@@ -4,6 +4,7 @@ public class Bicycle
 {
     private String name;
     private String color;
+    private int distance = 0;
 
     Bicycle(String name, String color)
     {
@@ -25,5 +26,6 @@ public class Bicycle
     {
         System.out.println("Nama: " + getName());
         System.out.println("Warna: " + getColor());
+        System.out.println("Jarak: " + this.distance + "km");
     }
 }
