@@ -4,10 +4,10 @@ public class Main
 {
     public static void main(String[] args)
     {
-        Bicycle sepeda = new Bicycle();
+        Bicycle bicycle = new Bicycle();
         System.out.println("【Info Sepeda】");
-        sepeda.setNameSepeda("Bianchi");
+        bicycle.setNameBicycle("Bianchi");
 
-        System.out.println("Nama: " + sepeda.getNameSepeda());
+        System.out.println("Nama: " + bicycle.getNameBicycle());
     }
 }

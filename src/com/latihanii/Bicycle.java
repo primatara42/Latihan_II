@@ -2,15 +2,15 @@ package com.latihanii;
 
 public class Bicycle
 {
-    private String nameSepeda;
+    private String nameBicycle;
 
-    public String setNameSepeda(String nameSepeda)
+    public String setNameBicycle(String nameBicycle)
     {
-        return this.nameSepeda = nameSepeda;
+        return this.nameBicycle = nameBicycle;
     }
 
-    public String getNameSepeda()
+    public String getNameBicycle()
     {
-        return this.nameSepeda;
+        return this.nameBicycle;
     }
 }
