@@ -6,8 +6,10 @@ public class Main
     {
         Bicycle bicycle = new Bicycle();
         System.out.println("【Info Sepeda】");
-        bicycle.setNameBicycle("Bianchi");
 
-        System.out.println("Nama: " + bicycle.getNameBicycle());
+        bicycle.setNameBicycle("Bianchi");
+        bicycle.setColorBicycle("Hijau");
+
+        bicycle.printData();
     }
 }
