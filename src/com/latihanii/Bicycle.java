@@ -5,6 +5,8 @@ public class Bicycle
     private String nameBicycle;
     private String colorBicycle;
 
+    private int distanceBicycle;
+
     public String setNameBicycle(String nameBicycle)
     {
         return this.nameBicycle = nameBicycle;
@@ -25,9 +27,20 @@ public class Bicycle
         return this.colorBicycle;
     }
 
+    public int setDistanceBicycle(int distanceBicycle)
+    {
+        return this.distanceBicycle = distanceBicycle;
+    }
+
+    public int getDistanceBicycle()
+    {
+        return this.distanceBicycle;
+    }
+
     public void printData()
     {
         System.out.println("Nama: " + getNameBicycle());
         System.out.println("Warna: " + getColorBicycle());
+        System.out.println("Jarak: " + getDistanceBicycle() + "km");
     }
 }
