@@ -8,16 +8,21 @@ public class Main
     {
         Scanner scanner = new Scanner(System.in);
         Bicycle bicycle = new Bicycle("Bianchi", "Hijau");
-
-        int bicycleDistance = 0;
+        Car car = new Car("Ferrari", "Merah");
 
         System.out.println("【Info Sepeda】");
         bicycle.printData();
-        System.out.println("-----------------");
 
+        int bicycleDistance;
         System.out.print("Masukkan jarak yang akan ditempuh: ");
         bicycleDistance = scanner.nextInt();
         bicycle.run(bicycleDistance);
+
+        System.out.println("-----------------");
+
+        System.out.println("【Info Mobil】");
+        car.printData();
+
 
     }
 }
