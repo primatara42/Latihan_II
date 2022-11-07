@@ -8,5 +8,7 @@ public class Main
         System.out.println("【Info Sepeda】");
 
         bicycle.printData();
+
+        bicycle.run(10);
     }
 }
