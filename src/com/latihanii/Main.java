@@ -23,5 +23,10 @@ public class Main
         System.out.println("【Info Mobil】");
         car.printData();
 
+        int carDistance;
+        System.out.print("Masukkan jarak yang akan ditempuh: ");
+        carDistance = scanner.nextInt();
+        car.run(carDistance);
+
     }
 }

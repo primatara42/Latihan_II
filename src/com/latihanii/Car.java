@@ -41,4 +41,25 @@ public class Car
         System.out.println("Bahan Bakar: " + getFuel() + "L");
     }
 
+    public void run(int distance)
+    {
+        System.out.println("Bergerak " + distance + "km...");
+        if(distance <= this.fuel)
+        {
+            this.distance = this.distance + distance;
+            this.fuel = this.fuel - this.distance;
+        }
+
+        else if(distance > this.fuel)
+        {
+            System.out.println("Bahan bakar tidak cukup");
+            this.distance = this.distance;
+            this.fuel = this.fuel;
+        }
+
+        System.out.println("Jarak: " + this.distance + "km");
+        System.out.println("Bahan Bakar: " + this.fuel + "L");
+
+    }
+
 }
