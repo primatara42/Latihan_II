@@ -27,7 +27,6 @@ public class Bicycle
         System.out.println("Nama: " + getName());
         System.out.println("Warna: " + getColor());
         System.out.println("Jarak: " + this.distance + "km");
-        System.out.println("-----------------");
     }
 
     public void run(int distance)
