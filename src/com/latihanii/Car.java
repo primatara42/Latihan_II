@@ -59,6 +59,30 @@ public class Car
 
         System.out.println("Jarak: " + this.distance + "km");
         System.out.println("Bahan Bakar: " + this.fuel + "L");
+    }
+
+    public void charge(int refill)
+    {
+        System.out.println("Menambahkan " + refill + "L...");
+
+        if(refill <= 0)
+        {
+            System.out.println("Tidak ada bahan bakar tertambahkan");
+            this.fuel = this.fuel;
+        }
+
+        else if(this.fuel + refill >= 100)
+        {
+            System.out.println("Sekarang tangki penuh");
+            this.fuel = 100;
+        }
+
+        else
+        {
+            this.fuel = this.fuel + refill;
+        }
+
+        System.out.println("Bahan bakar: " + this.fuel + "L");
 
     }
 
